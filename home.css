@@ -1,0 +1,332 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('home.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* Section Styling */
+.section {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    min-height: 80vh;
+    margin-left: 64px;
+
+}
+
+/* Container for text and images */
+.container {
+    display: flex;
+    gap: 18px;
+}
+
+.container-left{
+    display: flex;
+    width: 60%;
+    border-radius: 10px;
+    gap: 18px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Left Container for Text */
+.left-container {
+    padding: 30px;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.266);
+
+}
+
+.text-container h2 {
+    font-size: 33px; /* Increased font size */
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    margin-bottom: 20px;
+    font-size: 16px; /* Adjusted font size */
+    line-height: 1.6;
+}
+
+/* Right Container for Images */
+.right-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right-container .media img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+}
+
+/* Button Styling */
+.button-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.button {
+    padding: 12px 25px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+
+.footer{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+
+}
+.footer_left{
+    text-align:left;
+    margin-left: 15px;
+}
+.footer_right{
+    text-align:right;
+    margin-right: 15px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-main-title{
+    margin: 15px;
+    font-weight:lighter;
+}
+
+
+.nav-item-active{
+    color: lime;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.line-active {
+    background-color: lime;
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+.dot-active {
+    background-color: lime;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 27px;  /* Adjust the dot vertically to be centered on the line */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-text {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.line {
+    background-color: white;
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+.dot {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 27px;  /* Adjust the dot vertically to be centered on the line */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.dotted-hr {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    flex-grow: 1;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+.dot-line {
+    width: 10px;  /* Dot size */
+    height: 10px; /* Dot size */
+    background-color: rgb(255, 255, 255); /* Dot color */
+    border-radius: 50%; /* Make it round */
+    display: inline-block;
+}
+
+
+body {
+    background-color: #0e1b2a;
+    /* color: white; */
+    font-family: Arial, sans-serif;
+}
+
+.list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+    gap:20px;
+}
+
+
+    /* About Section */
+    #about {
+        margin: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+        flex-direction: column;
+    }
+
+    /* Horizontal lines */
+    .about-line {
+        width: 60%; /* Adjust this to control the line length */
+        height: 2px;
+        background-color: white;
+        position: relative;
+        margin-bottom: 20px; /* Space between the line and content */
+    }
+
+    .about-line .dot {
+        position: absolute;
+        z-index: 1;
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    /* Dots on both ends of the line */
+    .about-line .dot-left {
+        left: -10px; /* Shift slightly outside the line */
+        top: -5px;
+    }
+
+    .about-line .dot-right {
+        right: -20px; /* Shift slightly outside the line */
+        top: -5px;
+    }
+
+    .about-content {
+        background-color: rgba(0, 0, 0, 0.517); /* Semi-transparent black background */
+        padding: 33px;
+        margin: 15px;
+        color: white;
+        position: relative;
+    }
+
+    .about-content h2 {
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .about-content p {
+        color: #aaa;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .about-content p1{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .about-content p a {
+        color: #00FF00; /* Green links */
+        text-decoration: none;
+    }
+
+    /* Gallery slider */
+.gallery-section {
+    text-align: center;
+    padding: 180px 0 80px 0; /* Increased top padding to move content further down */
+    flex-grow: 1; /* Makes sure gallery section can grow */
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px; 
+    padding: 15px;
+}
+
+.gallery-images img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    /* border-radius: 10px; */
+}
+
+.gallery-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px; /* Adjusted margin to ensure it's further from the images */
+}
+
+.center-all{
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.gallery-scroll .dot-line{
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.gallery-scroll .dot-line:first-child{
+    background-color: cyan;
+}
